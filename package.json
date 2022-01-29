@@ -34,6 +34,9 @@
   },
   "scripts": {
     "start": "webpack serve --mode development",
-    "typegen": "kea-typegen write ./src"
+    "typegen": "kea-typegen write ./src", "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "ts-node-dev --respawn src/Union.ts",
+    "serve": "ts-node-dev src/function.ts",
+    "build": "tsc"
   }
 }

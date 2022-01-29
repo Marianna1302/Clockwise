@@ -23,6 +23,7 @@ module.exports = {
     },
     output: {
         filename: 'bundle.js', // выходной бандл
+        path: __dirname + '/build',
     },
     devServer: {
         static: {
@@ -34,6 +35,7 @@ module.exports = {
         },
         hot: "only",
       },
+      
     plugins: [new webpack.HotModuleReplacementPlugin()], // used for hot reloading when developing
     devtool: 'eval-source-map', // создает высококачественные карты кода
 }
