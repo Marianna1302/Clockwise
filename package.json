@@ -24,7 +24,9 @@
     "webpack-loader": "^0.0.1"
   },
   "dependencies": {
+    "express": "^4.17.2",
     "kea": "^2.5.8",
+    "pg": "^8.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.0",
@@ -34,9 +36,11 @@
   },
   "scripts": {
     "start": "webpack serve --mode development",
-    "typegen": "kea-typegen write ./src", "test": "echo \"Error: no test specified\" && exit 1",
+    "typegen": "kea-typegen write ./src",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "ts-node-dev --respawn src/Union.ts",
     "serve": "ts-node-dev src/function.ts",
-    "build": "tsc"
+    "build": "tsc",
+"heroku-postbuild": "npm run build"
   }
 }
