@@ -17,12 +17,35 @@ export function _App(): JSX.Element | null {
     return (
         <div>
              <form>
-        <label>
-          Имя: {merchants ? merchants : 'There is no merchant data available'}
-          <input type="text"  />
-        </label>
+        <p><label>
+          Введите Имя : 
+            <input type="text"  />
+        </label></p>
+        <p> <label>
+          Введите Email: 
+            <input type="email"  />
+        </label></p>
+        <p> <label>
+          Размер часов: 
+            <select>
+              <option>Маленькие</option>
+              <option>Средние</option>
+              <option>Большие</option>
+
+            </select>
+        </label></p>
+        <p> <label>
+          Город: 
+            <select>
+              <option>Днепр</option>
+              <option>Киев</option>
+              <option>Харьков</option>
+            </select>
+        </label></p>
+      
         <input type="submit" value="Отправить" />
       </form>
+      
         </div>
     )
 }

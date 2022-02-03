@@ -27,6 +27,7 @@
     "express": "^4.17.2",
     "kea": "^2.5.8",
     "pg": "^8.7.1",
+    "pg-promise": "^10.11.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.0",
@@ -41,6 +42,6 @@
     "watch": "ts-node-dev --respawn src/Union.ts",
     "serve": "ts-node-dev src/function.ts",
     "build": "tsc",
-"heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build"
   }
 }
